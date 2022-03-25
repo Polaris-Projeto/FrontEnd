@@ -5,7 +5,9 @@ import Navbar from './components/estaticos/navbar/Navbar';
 import Footer from './components/estaticos/footer/Footer';
 import Home from "./paginas/home/Home";
 import Login from "./paginas/login/Login";
+import Contato from "./paginas/contato/Contato";
 import './App.css';
+import Sobre from './paginas/sobre/Sobre';
 
 function App() {
   return (
@@ -17,12 +19,19 @@ function App() {
           <Route exact path="/">
             <Login />
           </Route>
+          <Route path="/sobre">
+            <Sobre />
+          </Route>
           <Route path="/login">
             <Login />
           </Route>
           <Route path="/home">
             <Home />
           </Route>
+          <Route path="/contato">
+            <Contato />
+          </Route>
+                  
         </div>
       </Switch>
 
