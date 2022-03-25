@@ -1,4 +1,13 @@
-#barra{
-    background-color: black;
-    height: 300px;
-}
+    #barra {
+        background-color: black;
+        height: 300px;
+    }
+    
+    .text-decorator-none {
+        text-decoration: none;
+    }
+    
+    .cursor {
+        cursor: pointer;
+        color: white;
+    }
