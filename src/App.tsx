@@ -8,6 +8,7 @@ import Login from "./paginas/login/Login";
 import Contato from "./paginas/contato/Contato";
 import './App.css';
 import Sobre from './paginas/sobre/Sobre';
+import CadastroUsuario from './paginas/cadastroUsuario/CadastroUsuario';
 
 function App() {
   return (
@@ -31,7 +32,10 @@ function App() {
           <Route path="/contato">
             <Contato />
           </Route>
-                  
+          <Route path="/cadastrousuario">
+            <CadastroUsuario />
+          </Route>                  
+        
         </div>
       </Switch>
 
