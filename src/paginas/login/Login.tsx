@@ -8,8 +8,8 @@ import { login } from '../../services/Service';
 
 function Login() {
 
-    let history = useHistory()
-    const [token, setToken] = useLocalStorage('token')
+    let history = useHistory();
+    const [token, setToken] = useLocalStorage('token');
     const [userLogin, setUserLogin] = useState<UserLogin>({
 
         id: 0,
