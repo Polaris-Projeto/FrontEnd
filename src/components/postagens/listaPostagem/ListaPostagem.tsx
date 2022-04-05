@@ -21,7 +21,7 @@ function ListaPostagem() {
   }, [token])
 
   async function getPost() {
-    await busca("/postagens", setPosts, {
+    await busca("/postagens/all", setPosts, {
       headers: {
         'Authorization': token
       }
