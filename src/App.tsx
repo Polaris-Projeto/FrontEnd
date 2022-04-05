@@ -46,10 +46,6 @@ function App() {
             <ListaPostagem />
           </Route>
 
-          <Route path='/posts'>
-            <ListaPostagem />
-          </Route>
-
           <Route exact path='/formularioPostagem'>
             <CadastroPost />
           </Route>
