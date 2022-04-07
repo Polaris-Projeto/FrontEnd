@@ -17,6 +17,7 @@ import { Provider } from 'react-redux';
 import store from './store/store';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Sobre from './paginas/sobre/Sobre';
 
 
 
@@ -30,7 +31,7 @@ function App() {
         <Switch>
           <div style={{ minHeight: '100vh' }}>
             <Route exact path='/'>
-              <Login />
+              <Sobre/>
             </Route>
 
             <Route path='/login'>
