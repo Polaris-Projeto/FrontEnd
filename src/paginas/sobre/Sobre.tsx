@@ -1,4 +1,4 @@
-import { Box, Button } from '@material-ui/core';
+import { AppBar, Box, Button, Toolbar, Typography } from '@material-ui/core';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Sobre.css';
@@ -6,29 +6,38 @@ import './Sobre.css';
 function Sobre() {
     return (
         <>
-        <div>
-        <h1 className='p30'>POLARIS</h1>
-        </div>
-            <Box marginTop={2} textAlign='right' >
-                <div>
-                    <Link to="/cadastrousuario">
-                        <Button type='submit' variant='contained' color='primary'>
-                            Cadastro
-                        </Button>
-                    </Link>
-                </div>
-                <div className='p5'>
-                    <Link to="/login">
-                        <Button type='submit' variant='contained' color='primary'>
-                            Login
-                        </Button>
-                    </Link>
-                </div>
+            <AppBar position="static">
+                <Toolbar variant="dense">
+                    <Box className='cursor'>
+                        <Typography variant="h5" color="inherit">
+                            
+                        </Typography>
+                    </Box>
+
+                    <Box display="flex" justifyContent="start">
+                        <Link to="/login" className="text-decorator-none">
+                            <Box mx={1} className='cursor'>
+                                <Typography variant="h6" color="inherit">
+                                    Entrar
+                                </Typography>
+                            </Box>
+                        </Link>
+                        <Link to="/cadastrousuario" className="text-decorator-none">
+                            <Box mx={1} className='cursor'>
+                                <Typography variant="h6" color="inherit">
+                                    Cadastrar
+                                </Typography>
+                            </Box>
+                        </Link>
+
+                    </Box>
+
+                </Toolbar>
+            </AppBar>
+
+            <h1 className='p30'>POLARIS</h1>
 
 
-
-
-            </Box>
 
         </>
     );
