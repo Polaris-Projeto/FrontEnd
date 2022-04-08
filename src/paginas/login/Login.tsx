@@ -92,8 +92,14 @@ function Login() {
                                 Logar
                             </Button>
                         </Box>
+<<<<<<< HEAD
                    
                      <Box display='flex' justifyContent='center' marginTop={2} className="ma">
+=======
+                    </form>
+                   
+                    <Box display='flex' justifyContent='center' marginTop={2}>
+>>>>>>> 858cc869d9bd7203e2f4e19af5d9ed1731fdf254
                         <Box marginRight={1}>
                             <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
                         </Box>
