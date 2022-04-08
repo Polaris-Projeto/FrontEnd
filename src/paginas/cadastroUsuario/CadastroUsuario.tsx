@@ -1,10 +1,12 @@
 import React, { useState, useEffect, ChangeEvent } from 'react';
-import { Grid, Box, Typography, Button, TextField } from '@material-ui/core';
+import { Grid, Box, Typography, Button, TextField, AppBar, Toolbar } from '@material-ui/core';
 import { Link, useHistory } from 'react-router-dom';
 import User from '../../models/User';
 import { cadastroUsuario } from '../../services/Service';
 import './CadastroUsuario.css';
 import { toast } from 'react-toastify';
+import CADASTRAR from "../../assets/img/CADASTRAR.png"
+import Compass from "../../assets/img/Compass.png"
 
 function CadastroUsuario() {
 
@@ -49,19 +51,19 @@ function CadastroUsuario() {
 
     async function cadastrar(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
-        if(confirmarSenha == user.senha){
-       await cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
-        toast.success('Usuario cadastrado com sucesso', {
-            position: "top-right",
-            autoClose: 2000,
-            hideProgressBar: false,
-            closeOnClick: true,
-            pauseOnHover: false,
-            draggable: false,
-            theme: "colored",
-            progress: undefined,
+        if (confirmarSenha == user.senha) {
+            await cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
+            toast.success('Usuario cadastrado com sucesso', {
+                position: "top-right",
+                autoClose: 2000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: false,
+                draggable: false,
+                theme: "colored",
+                progress: undefined,
             });
-        }else{
+        } else {
             toast.error('Dados inconsistentes. Favor verificar as informações de cadastro.', {
                 position: "top-right",
                 autoClose: 2000,
@@ -71,86 +73,134 @@ function CadastroUsuario() {
                 draggable: false,
                 theme: "colored",
                 progress: undefined,
-                });
+            });
         }
     }
 
     return (
-        <Grid container direction="row" justifyContent="center" alignItems="center">
-            <Grid item xs={6} className="imagemCadastro"></Grid>
-            <Grid item xs={6} alignItems="center">
-                <Box paddingX={10}>
-                    <form onSubmit={cadastrar}>
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center"
-                            className="textosCadastro">Cadastre-se</Typography>
-                        <TextField
-                            value={user.nome}
-                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id="nome"
-                            label="nome"
-                            variant="outlined"
-                            name="nome"
-                            margin="normal"
-                            fullWidth required />
+        <>
+            <AppBar position="static" >
+                <Toolbar variant="dense" className='center '
+                    style={{
+                        backgroundColor: "white"
+                    }} >
 
-                        <TextField
-                            value={user.usuario}
-                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            type='email'
-                            id="usuario"
-                            label="usuario"
-                            variant="outlined"
-                            name="usuario"
-                            margin="normal"
-                            fullWidth required />
+                    <Box display="flex" justifyContent="start">
+                        <Link to="/login" className="text-decorator-none textosblack" >
+                            <Box mx={1}>
+                                <Typography variant="h6" color="inherit" >
+                                    <img src={Compass} alt="a" />
+                                </Typography>
+                            </Box>
+                        </Link>
 
-                        <TextField
-                            value={user.senha}
-                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id="senha"
-                            label="senha"
-                            variant="outlined"
-                            name="senha"
-                            margin="normal"
-                            type="password"
-                            fullWidth required />
+                    </Box>
 
-                        <TextField
-                            value={confirmarSenha}
-                            onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)}
-                            id="confirmarSenha"
-                            label="confirmarSenha"
-                            variant="outlined"
-                            name="confirmarSenha"
-                            margin="normal"
-                            type="password"
-                            fullWidth required />
+                </Toolbar>
+            </AppBar>
+            <Box className='box'>
+                <Grid container direction="row" justifyContent="center" alignItems="center" className='background'>
+                    <Grid item xs={5} alignItems="center">
+                        <Box paddingX={10} className="form" >
 
-                        <TextField
-                            value={user.foto}
-                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
-                            id="foto"
-                            label="foto"
-                            variant="outlined"
-                            name="foto"
-                            margin="normal"
-                            fullWidth />
+                            <form onSubmit={cadastrar} >
+                                <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center"
+                                    className="textosCadastro">Cadastrar</Typography>
 
-                        <Box marginTop={2} textAlign="center">
-                            <Link to='/login' className="text-decorator-none">
-                                <Button variant="contained" color="secondary" className="botaoCancelar">
-                                    Cancelar
-                                </Button>
-                            </Link>
-                            
-                            <Button type="submit" variant="contained" color="primary" className="botaoCadastrar">
-                                Cadastrar
-                            </Button>
+                                <TextField
+
+                                    value={user.nome}
+                                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                                    id="nome"
+                                    label="nome"
+                                    variant="outlined"
+                                    name="nome"
+                                    margin="normal"
+                                    fullWidth required
+                                    style={{
+                                        backgroundColor: "#BACFDB"
+                                    }}
+                                />
+
+                                <TextField
+                                    value={user.usuario}
+                                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                                    type='email'
+                                    id="usuario"
+                                    label="usuario"
+                                    variant="outlined"
+                                    name="usuario"
+                                    margin="normal"
+                                    fullWidth required
+                                    style={{
+                                        backgroundColor: "#BACFDB"
+                                    }}
+                                />
+
+                                <TextField
+                                    value={user.senha}
+                                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                                    id="senha"
+                                    label="senha"
+                                    variant="outlined"
+                                    name="senha"
+                                    margin="normal"
+                                    type="password"
+                                    fullWidth required
+                                    style={{
+                                        backgroundColor: "#BACFDB"
+                                    }}
+                                />
+
+                                <TextField
+                                    value={confirmarSenha}
+                                    onChange={(e: ChangeEvent<HTMLInputElement>) => confirmarSenhaHandle(e)}
+                                    id="confirmarSenha"
+                                    label="confirmarSenha"
+                                    variant="outlined"
+                                    name="confirmarSenha"
+                                    margin="normal"
+                                    type="password"
+                                    fullWidth required
+                                    style={{
+                                        backgroundColor: "#BACFDB"
+                                    }}
+                                />
+
+                                <TextField
+                                    value={user.foto}
+                                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                                    id="foto"
+                                    label="foto"
+                                    variant="outlined"
+                                    name="foto"
+                                    margin="normal"
+                                    fullWidth
+                                    style={{
+                                        backgroundColor: "#BACFDB"
+                                    }}
+                                />
+
+                                <Box marginTop={2} textAlign="center" className='mge'>
+                                    <Button type="submit" variant="contained" color="primary" className="botaoCadastrar">
+                                        Cadastrar
+                                    </Button>
+                                </Box>
+                                <Box display='flex' justifyContent='center' marginTop={2} className='mge'>
+                                    <Box marginRight={1}>
+                                        <Typography variant='subtitle1' gutterBottom align='center' >Já tem uma conta?</Typography>
+                                    </Box>
+                                    <Link to="/login">
+                                        <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Faça login</Typography>
+                                    </Link>
+                                </Box>
+                            </form>
+
                         </Box>
-                    </form>
-                </Box>
-            </Grid>
-        </Grid>
+                    </Grid>
+                </Grid>
+            </Box>
+        </>
     );
 
 }
