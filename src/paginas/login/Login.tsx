@@ -1,13 +1,13 @@
 import React, { ChangeEvent, useState, useEffect } from 'react';
-import { Grid, Box, Typography, TextField, Button } from '@material-ui/core';
+import { Grid, Box, Typography, TextField, Button, CardMedia } from '@material-ui/core';
 import { Link, useHistory } from 'react-router-dom';
 import UserLogin from '../../models/UserLogin';
-import useLocalStorage from 'react-use-localstorage';
 import { login } from '../../services/Service';
 import "./Login.css";
 import { useDispatch } from 'react-redux';
 import { addToken } from '../../store/tokens/actions';
 import { toast } from 'react-toastify';
+import ENTRAR from "../../assets/img/ENTRAR.png"
 
 function Login() {
 
@@ -68,20 +68,32 @@ function Login() {
     }
 
     return (
-        <Grid container direction='row' justifyContent='center' alignItems='center'>
-            <Grid alignItems='center' xs={6}>
-                <Box paddingX={20}>
+        <Grid container direction='row' justifyContent='center' alignItems='center' className="body1">
+           
+            <Grid item alignItems='center' xs={6}   >
+
+               <Grid  className="form1">
+                <Box padding={20}   >
                     <form onSubmit={cadastrar}>
-                        <Typography variant='h3' gutterBottom color='textPrimary' component='h3' align='center' className='textos1'>Entrar</Typography>
-                        <TextField value={userLogin.usuario} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
-                        <TextField value={userLogin.senha} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
+                        <Typography 
+                            variant='h3' gutterBottom 
+                            color='textPrimary' component='h3'
+                            align='center' className='textos1 ma'>Entrar</Typography>
+                        
+                        <TextField
+                            value={userLogin.usuario} 
+                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='usuario' label='usuário' variant='outlined' name='usuario' margin='normal' fullWidth />
+                       
+                        <TextField value={userLogin.senha}
+                            onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} id='senha' label='senha' variant='outlined' name='senha' margin='normal' type='password' fullWidth />
+                            
                         <Box marginTop={2} textAlign='center'>
                             <Button type='submit' variant='contained' color='primary'>
                                 Logar
                             </Button>
                         </Box>
-                    </form>
-                    <Box display='flex' justifyContent='center' marginTop={2}>
+                   
+                     <Box display='flex' justifyContent='center' marginTop={2} className="ma">
                         <Box marginRight={1}>
                             <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
                         </Box>
@@ -89,11 +101,11 @@ function Login() {
                             <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
                         </Link>
                     </Box>
+                    </form>
                 </Box>
+                </Grid>
             </Grid>
-            <Grid xs={6} className="imagem">
-
-            </Grid>
+            
         </Grid>
     );
 }

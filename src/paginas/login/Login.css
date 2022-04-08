@@ -4,13 +4,48 @@
 
 .textos1 {
     font-weight: bold !important;
+    
 }
 
 .imagem {
-    background-image: url(https://www.infoescola.com/wp-content/uploads/2008/12/bussola.jpg);
+    background-image: url();
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
+}
+
+.form1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block-start: 120px;
+    background-color: white;
+    border-radius: 50px;
+    width: 600px;
+
+
+   /* background: linear-gradient(36deg, #e7f0f5 8%, #5f9ab490 80%)!important;*/
+}
+
+.body1{
+    background-image: url(../../assets/img/ENTRAR.png);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+   /* width: 100vw;
+    min-height: calc(100vh - 64px); */
+
+}
+.ma{
+    margin-top: 100px!important;
+    
+}
+
+.ma2{
+    margin-block-start: 50px !important;
 }
