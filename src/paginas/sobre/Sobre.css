@@ -5,3 +5,65 @@
 .p30 {
     padding: 30px;
 }
+.barra{
+    background-color: white;
+    display: flex;
+    justify-content:flex-start
+
+}
+.botao{
+    text-decoration: none;
+}
+.iconeBussola{
+    justify-content: center !important;
+}
+.foto{
+    max-width: 98.8vw;
+}
+
+.caixa-sobre{
+    display: flex;
+    align-items: center;
+    margin: 0 0 0 25px;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+.urso{
+    max-width: 30%;
+}
+/* .textoSobre{
+    position: absolute;
+    left: 440px;
+    top: 950px;
+} */
+.tituloDevs{
+    text-align: center;
+}
+.devs{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
+    padding-left: 70px;
+    
+}
+.fotoDev{
+    text-align: center;
+    border-radius: 50%;
+    width: 50%;
+}
+.dev{
+    text-align: justify;
+
+}
+.nome{
+    text-align: center;
+}
+.icones{
+    font-size: 50px !important;
+    color: black;
+}
+.fundoUrso{
+    background-color: #901651;
+}
