@@ -113,7 +113,11 @@ function Login() {
                                     <Link to="/cadastrousuario">
                                         <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
                                     </Link>
+                                    
                                 </Box>
+                                <Link to="/">
+                                        <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Conheça-nos</Typography>
+                                    </Link>
                             </form>
                         </Box>
                     </Grid>

@@ -112,7 +112,7 @@ function CadastroTema() {
             <form onSubmit={onSubmit}>
                 <Typography variant="h3" color="textSecondary" component="h1" align="center" >Cadastre aqui seu novo tema</Typography>
                 <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <Fab size="large" variant="extended" className="marginLeft atualizar">
+                <Fab type="submit" size="large" variant="extended" className="marginLeft atualizar">
                         Finalizar
                     </Fab>
             </form>
