@@ -4,6 +4,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Sobre.css';
+import icone from "../../assets/img/icone.png";
+import bussola2 from "../../assets/img/bussola2.jpg";
+import ursoBussola from "../../assets/img/ursoBussola.png";
+
 
 
 function Sobre() {
