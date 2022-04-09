@@ -78,7 +78,7 @@ function Navbar() {
                         <Typography variant="h6" color="inherit">
                             <Link to="/formularioTema" className="botaon">
                                 <Fab size="large" variant="extended" className='botao1n'>
-                                    Formulário Temas
+                                    Cadastre um Tema
                                 </Fab>
                             </Link>
                         </Typography>
