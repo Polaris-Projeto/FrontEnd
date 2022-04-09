@@ -7,6 +7,7 @@ import { buscaId, deleteId } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import Fab from '@mui/material/Fab';
 
 
 function DeletarPostagem() {
@@ -76,8 +77,8 @@ function DeletarPostagem() {
         <Card variant="outlined" >
           <CardContent>
             <Box justifyContent="center">
-              <Typography color="textSecondary" gutterBottom>
-                Deseja deletar a Postagem:
+              <Typography color="textSecondary" className='lista' gutterBottom>
+              DESEJA DELETAR A POSTAGEM? 
               </Typography>
               <Typography color="textSecondary" >
                 {post?.titulo}
@@ -88,14 +89,14 @@ function DeletarPostagem() {
           <CardActions>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
-                <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
+                <Fab size="large" variant="extended" onClick={sim} className="marginLeft atualizar" >
                   Sim
-                </Button>
+                </Fab>
               </Box>
               <Box>
-                <Button onClick={nao} variant="contained" size='large' color="secondary">
+                <Fab size="large" variant="extended" onClick={nao} className="marginLeft deletar">
                   Não
-                </Button>
+                </Fab>
               </Box>
             </Box>
           </CardActions>

@@ -1,3 +1,20 @@
 .text-decorator-none {
     text-decoration: none;
 }
+
+atualizar{ 
+    color: #901651 !important;
+    font-weight: bold !important;
+
+}
+
+.deletar { 
+    color: #3A5E72 !important;
+    font-weight: bold !important;
+}
+
+.lista { 
+    font-weight:bold !important;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif!important;
+       
+}

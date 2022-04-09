@@ -8,6 +8,7 @@ import { useHistory } from 'react-router-dom'
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import Fab from '@mui/material/Fab';
 
 function ListaPostagem() {
   let history = useHistory();
@@ -51,11 +52,11 @@ function ListaPostagem() {
     <>
       {
         posts.map(post => (
-          <Box m={2} >
-            <Card variant="outlined">
+          <Box m={2}  >
+            <Card variant="outlined" >
               <CardContent>
-                <Typography color="textSecondary" gutterBottom>
-                  Postagens
+                <Typography color="textSecondary" className='lista' gutterBottom >
+                  POSTAGENS
                 </Typography>
                 <Typography variant="h5" component="h2">
                   {post.titulo}
@@ -68,20 +69,22 @@ function ListaPostagem() {
                 </Typography>
               </CardContent>
               <CardActions>
-                <Box display="flex" justifyContent="center" mb={1.5}>
+                <Box display="flex" justifyContent="center" mb={1.5} >
 
                   <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
+                    
                     <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                      <Fab size="large" variant="extended" className="marginLeft atualizar">
                         atualizar
-                      </Button>
+                      </Fab>
                     </Box>
                   </Link>
                   <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
+                    
                     <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary">
+                      <Fab size="large" variant="extended" className='deletar'>
                         deletar
-                      </Button>
+                      </Fab>
                     </Box>
                   </Link>
                 </Box>

@@ -5,7 +5,7 @@ import User from '../../models/User';
 import { cadastroUsuario } from '../../services/Service';
 import './CadastroUsuario.css';
 import { toast } from 'react-toastify';
-import CADASTRAR from "../../assets/img/CADASTRAR.png"
+import CADASTRAR2 from "../../assets/img/CADASTRAR.png"
 import Compass from "../../assets/img/Compass.png"
 
 function CadastroUsuario() {

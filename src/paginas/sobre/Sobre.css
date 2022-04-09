@@ -13,7 +13,7 @@
 }
 
 .botao {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .iconeBussola {

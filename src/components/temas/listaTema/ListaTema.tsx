@@ -7,6 +7,7 @@ import { busca } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import Fab from '@mui/material/Fab';
 
 function ListaTema() {
   let history = useHistory();
@@ -49,8 +50,8 @@ function ListaTema() {
           <Box m={2} >
             <Card variant="outlined">
               <CardContent>
-                <Typography color="textSecondary" gutterBottom>
-                  Tema
+                <Typography  color="textSecondary" className='lista' gutterBottom>
+                  TEMA
                 </Typography>
                 <Typography variant="h5" component="h2">
                   {tema.descricao}
@@ -61,16 +62,16 @@ function ListaTema() {
 
                   <Link to={`/formularioTema/${tema.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" className="marginLeft" size='small' color="primary" >
+                    <Fab size="large" variant="extended" className="marginLeft atualizar">
                         atualizar
-                      </Button>
+                      </Fab>
                     </Box>
                   </Link>
                   <Link to={`/deletarTema/${tema.id}`} className="text-decorator-none">
                     <Box mx={1}>
-                      <Button variant="contained" size='small' color="secondary">
+                    <Fab size="large" variant="extended" className='deletar'>
                         deletar
-                      </Button>
+                      </Fab>
                     </Box>
                   </Link>
                 </Box>

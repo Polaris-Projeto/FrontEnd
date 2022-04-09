@@ -7,6 +7,7 @@ import { buscaId, post, put } from '../../../services/Service';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
+import Fab from '@mui/material/Fab';
 
 function CadastroTema() {
     let history = useHistory();
@@ -109,11 +110,11 @@ function CadastroTema() {
     return (
         <Container maxWidth="sm" className="topo">
             <form onSubmit={onSubmit}>
-                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Formulário de cadastro tema</Typography>
+                <Typography variant="h3" color="textSecondary" component="h1" align="center" >Cadastre aqui seu novo tema</Typography>
                 <TextField value={tema.descricao} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedTema(e)} id="descricao" label="descricao" variant="outlined" name="descricao" margin="normal" fullWidth />
-                <Button type="submit" variant="contained" color="primary">
-                    Finalizar
-                </Button>
+                <Fab size="large" variant="extended" className="marginLeft atualizar">
+                        Finalizar
+                    </Fab>
             </form>
         </Container>
     )
