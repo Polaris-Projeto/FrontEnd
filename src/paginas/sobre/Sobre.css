@@ -9,11 +9,13 @@
 .barra {
     background-color: white;
     display: flex;
-    justify-content: flex-start
+    justify-content: flex-start;
+    
 }
 
 .botao {
     text-decoration: none;
+    
 }
 
 .iconeBussola {
@@ -77,3 +79,15 @@
 .fundoUrso {
     background-color: #901651;
 }
+
+.botao1{
+    color: #901651!important;
+    font-weight: bold !important;
+}
+
+.botao2{
+    font-weight: bold !important;
+    color: #3E80A6!important;
+}
+  
+    

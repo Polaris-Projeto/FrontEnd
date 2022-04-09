@@ -1,7 +1,7 @@
 import React from 'react'
 import { makeStyles, Theme, createStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
-import {Button,Box } from "@material-ui/core"
+import {Fab ,Box } from "@material-ui/core"
 import CloseIcon from '@material-ui/icons/Close';
 import './ModalPostagem.css';
 import CadastroPost from '../cadastroPost/CadastroPost';
@@ -58,10 +58,11 @@ function ModalPostagem () {
 
   return (
     <div>
-      <Button
-        variant="outlined"
+      <Fab
+        variant="extended"
         className="btnModal"
-        onClick={handleOpen}>Nova Postagem</Button>
+        onClick={handleOpen}>Nova Postagem</Fab>
+      
       <Modal
         open={open}
         onClose={handleClose}
