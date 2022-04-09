@@ -7,6 +7,8 @@ import "./Login.css";
 import { useDispatch } from 'react-redux';
 import { addToken } from '../../store/tokens/actions';
 import { toast } from 'react-toastify';
+import Compass from "../../assets/img/Compass.png";
+import CompassWest from "../../assets/img/CompassWest.png";
 
 
 function Login() {
@@ -70,9 +72,12 @@ function Login() {
     return (
         <>
             <Box className='box'>
+                   <Link to="/" className='p15'>                
+                      <img src={CompassWest} width="50px" alt="" />
+                   </Link>
                 <Grid container direction="row" justifyContent="center" alignItems="center" className='body1'>
                     <Grid item xs={5} alignItems="center">
-                        <Box paddingY={15} paddingX={10} className="form1" >
+                        <Box paddingY={13} paddingX={10} className="form1" >
 
                             <form onSubmit={cadastrar} >
                                 <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center"
@@ -80,24 +85,24 @@ function Login() {
 
                                 <TextField
                                     value={userLogin.usuario}
-                                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} 
-                                    id='usuario' 
-                                    label='usuário' 
-                                    variant='outlined' 
-                                    name='usuario' 
-                                    margin='normal' 
-                                    style={{backgroundColor: "#BACFDB"}}
+                                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                                    id='usuario'
+                                    label='usuário'
+                                    variant='outlined'
+                                    name='usuario'
+                                    margin='normal'
+                                    style={{ backgroundColor: "#BACFDB" }}
                                     fullWidth />
 
                                 <TextField value={userLogin.senha}
-                                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)} 
-                                    id='senha' 
-                                    label='senha' 
-                                    variant='outlined' 
+                                    onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
+                                    id='senha'
+                                    label='senha'
+                                    variant='outlined'
                                     name='senha'
                                     margin='normal'
                                     type='password'
-                                    style={{backgroundColor: "#BACFDB"}}
+                                    style={{ backgroundColor: "#BACFDB" }}
                                     fullWidth />
 
                                 <Box marginTop={2} textAlign='center' className='mge'>
@@ -113,11 +118,9 @@ function Login() {
                                     <Link to="/cadastrousuario">
                                         <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
                                     </Link>
-                                    
+
                                 </Box>
-                                <Link to="/">
-                                        <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Conheça-nos</Typography>
-                                    </Link>
+                            
                             </form>
                         </Box>
                     </Grid>

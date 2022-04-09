@@ -45,7 +45,6 @@
                 justify-content: center;
                 align-items: center;
             }
-            
             /*.box {
                 background-image: url(https://cdn.discordapp.com/attachments/941330341271048263/961996772421566524/CADATRAR_2.png);
             }
@@ -74,4 +73,8 @@
             
             .background {
                 background-image: url(../../assets/img/CADASTRAR.png);
+            }
+            
+            .p15 {
+                padding: 15px;
             }
