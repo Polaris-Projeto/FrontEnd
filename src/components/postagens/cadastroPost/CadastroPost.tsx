@@ -157,12 +157,8 @@ function CadastroPost() {
                         }
                     </Select>
                     <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-<<<<<<< HEAD
-                    <Fab size="large" variant="extended" className=" atualizar">
-=======
 
-                    <Fab type="submit" size="large" variant="extended" className="marginLeft atualizar">
->>>>>>> 53b4824c52e547d8f3ad3efc9379275f8dbeab29
+                    <Fab size="large" variant="extended" className=" atualizar">
                         Finalizar
                     </Fab>
                 </FormControl>

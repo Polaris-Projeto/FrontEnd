@@ -14,7 +14,6 @@ function Sobre() {
         <>
             <Grid xs={12}>
                 <AppBar position="static">
-<<<<<<< HEAD
                     <Toolbar variant="dense" className="barra">
                         <Box className='esquerda'>
                         <img src={icone} alt="" className='iconeBussola barra'/>
@@ -32,30 +31,7 @@ function Sobre() {
                         </Link>
                     </Box>
                    
-=======
-                    <Toolbar variant="dense" className="barra navbar">
-                        <Grid xs={4}>
-                            <img src={icone} alt="ícone de uma bússola" className='iconeBussola' />
-                        </Grid>
-                        <Grid xs={4}>
-                        </Grid>
-                        <Grid xs={4}>
-                        </Grid>
-                        <Grid xs={3}>
-                            <Box>
-                                <Link to="/login" className="botao ">
-                                    <Fab size="small" variant="extended" className='botao1'>
-                                        Entrar
-                                    </Fab>
-                                </Link>
-                                <Link to="/cadastrousuario" className="botao" >
-                                    <Fab size="small" variant="extended" className='botao2'>
-                                        Cadastrar
-                                    </Fab>
-                                </Link>
-                            </Box>
-                        </Grid>
->>>>>>> 53b4824c52e547d8f3ad3efc9379275f8dbeab29
+
                     </Toolbar>
                 </AppBar>
             </Grid>
@@ -104,14 +80,11 @@ function Sobre() {
                 </Grid>
                 <Grid container item xs={4} direction='row'>
                     <Box className='dev'>
-<<<<<<< HEAD
+
                         <Box > 
                             <img src='https://avatars.githubusercontent.com/u/58313000?v=4' alt="foto" className="fotoDev "/>
 
-=======
-                        <Box>
-                            <img src='https://avatars.githubusercontent.com/u/58313000?v=4' alt="foto" className="fotoDev" />
->>>>>>> 53b4824c52e547d8f3ad3efc9379275f8dbeab29
+
                             <a href="https://github.com/Leonardo0908" target="_blank">
                                 <GitHubIcon className='icones' />
                             </a>

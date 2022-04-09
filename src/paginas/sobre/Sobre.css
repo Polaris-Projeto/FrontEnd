@@ -8,20 +8,11 @@
 
 .barra {
     background-color: white;
-<<<<<<< HEAD
+
 }
 
 .botao {
-=======
-    display: flex;
-    justify-content: flex-start;
-    height: 64px;
-    width: 100%;
-}
 
-.botao {
-    text-decoration: none !important;
->>>>>>> 53b4824c52e547d8f3ad3efc9379275f8dbeab29
     text-decoration: none;
 }
 
@@ -89,7 +80,6 @@
     background-color: #901651;
 }
 
-<<<<<<< HEAD
 .direita {
     display: flex;
     justify-content: flex-end !important;
@@ -109,24 +99,4 @@
 
 .textosazuis {
     color: #3E80A6 !important;
-=======
-.botao1 {
-    color: #901651!important;
-    font-weight: bold !important;
-}
-
-.botao2 {
->>>>>>> 53b4824c52e547d8f3ad3efc9379275f8dbeab29
-    font-weight: bold !important;
-}
-
-<<<<<<< HEAD
-.iconesRedes {
-    display: inline-block;
-=======
-.direita {
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
->>>>>>> 53b4824c52e547d8f3ad3efc9379275f8dbeab29
 }
