@@ -4,11 +4,10 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Sobre.css';
-import icone from "../../assets/img/icone.png";
-import bussola2 from "../../assets/img/bussola2.jpg";
-import ursoBussola from "../../assets/img/ursoBussola.png";
-
-
+import bussola2 from './images/bussola2.jpg';
+import ursoBussola from './images/ursoBussola.png';
+import ney from './images/ney.png';
+import icone from './images/icone.png';
 
 function Sobre() {
     return (
@@ -17,25 +16,22 @@ function Sobre() {
             <Grid xs={12}>
                 <AppBar position="static">
                     <Toolbar variant="dense" className="barra">
-                        <img src={icone} alt="ícone de uma bússola" className='iconeBussola'/>
-                        <Link to="/login" className="botao">
-<<<<<<< HEAD
-                            <Fab size="small" variant="extended" className="botaoEntrar">
-=======
-                            <Fab size="small" variant="extended" className='botao1'>
->>>>>>> a70166b62f025d9df0029ebf85e3e363cb051e40
+                        <Box className='esquerda'>
+                        <img src={icone} alt="" className='iconeBussola barra'/>
+                        </Box>
+                    <Box className='direita' >
+                    <Link to="/login" className="botao">
+                            <Fab size="small" variant="extended" className='textosroxo'>
                                 Entrar
                             </Fab>
                         </Link>
-                        <Link to="/cadastrousuario" className="botao" >
-<<<<<<< HEAD
-                            <Fab size="small" variant="extended" className='botaoCadastrar' >
-=======
-                            <Fab size="small" variant="extended" className='botao2'>
->>>>>>> a70166b62f025d9df0029ebf85e3e363cb051e40
+                        <Link to="/cadastrousuario" className="botao " >
+                            <Fab size="small" variant="extended" className='textosazuis'>
                                 Cadastrar
                             </Fab>
                         </Link>
+                    </Box>
+                   
                     </Toolbar>
                 </AppBar>
             </Grid>
@@ -46,7 +42,7 @@ function Sobre() {
 
                 <Box className='caixa-sobre'>
                     <img src={ursoBussola} alt="Urso" className="urso" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum, similique aperiam doloribus ipsum quia ad laborum dolorum debitis dolor odit suscipit, tempore reiciendis nulla sit dolorem unde ex facilis.
+                    <p>     Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum, similique aperiam doloribus ipsum quia ad laborum dolorum debitis dolor odit suscipit, tempore reiciendis nulla sit dolorem unde ex facilis.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos quaerat doloribus sequi rem asperiores cumque, possimus molestias veritatis tempora, saepe eius velit. Quasi natus molestiae cum quae, hic porro.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum, similique aperiam doloribus ipsum quia ad laborum dolorum debitis dolor odit suscipit, tempore reiciendis nulla sit dolorem unde ex facilis.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos quaerat doloribus sequi rem asperiores cumque, possimus molestias veritatis tempora, saepe eius velit. Quasi natus molestiae cum quae, hic porro.</p>
                 </Box>
@@ -83,15 +79,16 @@ function Sobre() {
                 </Grid>
                 <Grid container item xs={4} direction='row'>
                     <Box className='dev'>
-                        <Box>
-                            <img src='https://avatars.githubusercontent.com/u/58313000?v=4' alt="foto" className="fotoDev"/>
+                        <Box > 
+                            <img src='https://avatars.githubusercontent.com/u/58313000?v=4' alt="foto" className="fotoDev "/>
+
                             <a href="https://github.com/Leonardo0908" target="_blank">
                                 <GitHubIcon className='icones'/>
                             </a>
                             <a href="https://www.linkedin.com/in/leosouzarodrigues/" target="_blank">
                                 <LinkedInIcon className='icones'/>
                             </a>
-                            <p><h3 className='nome'>Leonardo</h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt doloremque fuga dolorum molestiae nam beatae, enim unde quasi earum cum quo iste quae quisquam voluptates. Quis ipsum molestiae voluptate neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consequatur? Ex sapiente consequuntur eum alias nesciunt quis, aliquam qui ratione quas nemo velit vel? Voluptate dolore earum rerum explicabo beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur repellendus dignissimos itaque omnis? Culpa, ut cum delectus doloremque deleniti quos consectetur consequatur aspernatur, aliquid dicta rerum quia mollitia eius!</p>
+                            <p><h3 className='nome'>Leonardo</h3>   Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt doloremque fuga dolorum molestiae nam beatae, enim unde quasi earum cum quo iste quae quisquam voluptates. Quis ipsum molestiae voluptate neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consequatur? Ex sapiente consequuntur eum alias nesciunt quis, aliquam qui ratione quas nemo velit vel? Voluptate dolore earum rerum explicabo beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur repellendus dignissimos itaque omnis? Culpa, ut cum delectus doloremque deleniti quos consectetur consequatur aspernatur, aliquid dicta rerum quia mollitia eius!</p>
                         </Box>
                     </Box>
                 </Grid>
@@ -141,6 +138,11 @@ function Sobre() {
                 </Grid>
             </Grid>
             </Grid>
+
+
+
+
+
 
         </>
     );

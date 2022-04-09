@@ -8,22 +8,16 @@
 
 .barra {
     background-color: white;
-    display: flex;
-    justify-content: flex-start;
-    
 }
 
 .botao {
-<<<<<<< HEAD
-    text-decoration: none !important;
-=======
     text-decoration: none;
-    
->>>>>>> a70166b62f025d9df0029ebf85e3e363cb051e40
 }
 
 .iconeBussola {
-    justify-content: center !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .foto {
@@ -62,9 +56,9 @@
 }
 
 .fotoDev {
-    text-align: center;
-    border-radius: 50%;
-    width: 50%;
+    align-items: center !important;
+    border-radius: 10%;
+    width: 40%;
 }
 
 .dev {
@@ -76,7 +70,7 @@
 }
 
 .icones {
-    font-size: 50px !important;
+    font-size: 70px !important;
     color: black;
 }
 
@@ -84,14 +78,28 @@
     background-color: #901651;
 }
 
-.botao1{
-    color: #901651!important;
+.direita {
+    display: flex;
+    justify-content: flex-end !important;
+    align-items: flex-end;
+}
+
+.esquerda {
+    display: flex;
+    justify-content: flex-start !important;
+    align-items: flex-start;
+}
+
+.textosroxo {
+    color: #901651 !important;
     font-weight: bold !important;
 }
 
-.botao2{
+.textosazuis {
+    color: #3E80A6 !important;
     font-weight: bold !important;
-    color: #3E80A6!important;
 }
-  
-    
+
+.iconesRedes {
+    display: inline-block;
+}

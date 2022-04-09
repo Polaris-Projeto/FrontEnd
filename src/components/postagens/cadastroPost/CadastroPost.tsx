@@ -143,7 +143,7 @@ function CadastroPost() {
                 <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="texto" name="texto" variant="outlined" margin="normal" fullWidth />
 
                 <FormControl  >
-                    <InputLabel id="demo-simple-select-helper-label" >Tema  </InputLabel>
+                    <InputLabel id="demo-simple-select-helper-label" >Tema </InputLabel>
                     <Select
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
@@ -159,7 +159,7 @@ function CadastroPost() {
                         }
                     </Select>
                     <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-                    <Fab size="large" variant="extended" className="marginLeft atualizar">
+                    <Fab size="large" variant="extended" className=" atualizar">
                         Finalizar
                     </Fab>
                 </FormControl>
