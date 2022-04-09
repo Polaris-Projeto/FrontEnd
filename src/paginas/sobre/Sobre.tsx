@@ -19,12 +19,20 @@ function Sobre() {
                     <Toolbar variant="dense" className="barra">
                         <img src={icone} alt="ícone de uma bússola" className='iconeBussola'/>
                         <Link to="/login" className="botao">
+<<<<<<< HEAD
                             <Fab size="small" variant="extended" className="botaoEntrar">
+=======
+                            <Fab size="small" variant="extended" className='botao1'>
+>>>>>>> a70166b62f025d9df0029ebf85e3e363cb051e40
                                 Entrar
                             </Fab>
                         </Link>
                         <Link to="/cadastrousuario" className="botao" >
+<<<<<<< HEAD
                             <Fab size="small" variant="extended" className='botaoCadastrar' >
+=======
+                            <Fab size="small" variant="extended" className='botao2'>
+>>>>>>> a70166b62f025d9df0029ebf85e3e363cb051e40
                                 Cadastrar
                             </Fab>
                         </Link>
