@@ -10,16 +10,13 @@
     background-color: white;
     display: flex;
     justify-content: flex-start;
-    
+    height: 64px;
+    width: 100%;
 }
 
 .botao {
-<<<<<<< HEAD
     text-decoration: none !important;
-=======
     text-decoration: none;
-    
->>>>>>> a70166b62f025d9df0029ebf85e3e363cb051e40
 }
 
 .iconeBussola {
@@ -84,14 +81,18 @@
     background-color: #901651;
 }
 
-.botao1{
+.botao1 {
     color: #901651!important;
     font-weight: bold !important;
 }
 
-.botao2{
+.botao2 {
     font-weight: bold !important;
     color: #3E80A6!important;
 }
-  
-    
+
+.direita {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}

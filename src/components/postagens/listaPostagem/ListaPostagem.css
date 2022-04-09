@@ -1,27 +1,28 @@
-.text-decorator-none{
+.text-decorator-none {
     text-decoration: none;
 }
 
-.atualizar{ 
+.atualizar {
     color: #901651 !important;
     font-weight: bold !important;
-
 }
 
-.deletar { 
+.deletar {
     color: #3A5E72 !important;
     font-weight: bold !important;
 }
 
-.postagens { 
-    font-weight:bolder !important;
+.postagens {
+    font-weight: bolder !important;
     text-align: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-.lista { 
-    font-weight:bold !important;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
-    
+.lista {
+    font-weight: bold !important;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
+.caixap {
+    background-color: #BACFDB;
+}

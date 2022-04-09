@@ -1,11 +1,12 @@
 import React from "react";
 import { Link, useHistory } from "react-router-dom";
-import { AppBar, Toolbar, Typography, Box } from '@material-ui/core';
+import { AppBar, Toolbar, Typography, Box, Fab, Grid } from '@material-ui/core';
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from "react-redux";
 import { TokenState } from "../../../store/tokens/tokensReducer";
 import { addToken } from "../../../store/tokens/actions";
-import logo from "../../../assets/img/logo.png";
+import Compass from "../../../assets/img/Compass.png";
+import CompassWest from "../../../assets/img/CompassWest.png";
 import './Navbar.css';
 
 function Navbar() {
@@ -33,54 +34,85 @@ function Navbar() {
     var navbarComponent;
 
     if (token !== "") {
-        navbarComponent = <AppBar position="static" >
-            <Toolbar variant="dense">
-                <Box className='cursor'>
-                    <Typography variant="h5" color="inherit">
-                         <img src={logo} width="100px" alt="" /> 
-                    </Typography>
-                </Box>
+        navbarComponent = <Grid xs={12}>
+            <AppBar position="static" >
+                <Toolbar variant="dense" className="barran">
 
-                <Box display="flex" justifyContent="start">
-                    <Link to="/home"className='cursor5'>
-                        <Box mx={1}>
-                            <Typography variant="h6" color="inherit">
-                                home
+                    <Grid xs={2}>
+                        <Box className='cursor marginbotton'>
+                            <Typography variant="h5" color="inherit">
+                                <img src={Compass} width="50px" alt="" />
                             </Typography>
                         </Box>
-                    </Link>
-                    <Link to="/posts" className='cursor5'>
-                        <Box mx={1} >
-                            <Typography variant="h6" color="inherit">
-                                postagens
-                            </Typography>
-                        </Box>
-                    </Link>
-                    <Link to="/temas" className='cursor5'>
-                        <Box mx={1} >
-                            <Typography variant="h6" color="inherit">
-                                temas
-                            </Typography>
-                        </Box>
-                    </Link>
-                    <Link to="/formularioTema" className='cursor5'>
-                        <Box mx={1} >
-                            <Typography variant="h6" color="inherit">
-                                cadastrar tema
-                            </Typography>
-                        </Box>
-                    </Link>
-                    <Link to="" className='cursor5 cursor2'>
-                    <Box mx={1}  onClick={goLogout}>
-                        <Typography variant="h6" color="inherit" >
-                            logout
+                    </Grid>
+                    <Grid xs={3}>
+                        <Typography variant="h6" color="inherit">
+                            <Link to="/home" className="botaon">
+                                <Fab size="large" variant="extended" className='botao1n'>
+                                    Home
+                                </Fab>
+                            </Link>
                         </Typography>
-                    </Box>
-                    </Link>
-                </Box>
+                    </Grid>
+                    <Grid xs={4}>
+                        <Typography variant="h6" color="inherit">
+                            <Link to="/posts" className="botaon">
+                                <Fab size="large" variant="extended" className='botao1n'>
+                                    Postagens
+                                </Fab>
+                            </Link>
+                        </Typography>
+                    </Grid>
+                    <Grid xs={3}>
+                        <Box mx={1} >
+                            <Typography variant="h6" color="inherit">
+                                <Link to="/temas" className="botaon">
+                                    <Fab size="large" variant="extended" className='botao1n'>
+                                        Temas
+                                    </Fab>
+                                </Link>
+                            </Typography>
+                        </Box>
+                    </Grid>
+                    <Grid xs={5}>
+                        <Typography variant="h6" color="inherit">
+                            <Link to="/formularioTema" className="botaon">
+                                <Fab size="large" variant="extended" className='botao1n'>
+                                    Formulário Temas
+                                </Fab>
+                            </Link>
+                        </Typography>
+                    </Grid>
+                    <Grid xs={3}>
+                        <Box mx={1} onClick={goLogout}>
+                            <Typography variant="h6" color="inherit" >
+                                <Link to="/login" className="botaon">
+                                    <Fab size="large" variant="extended" className='botaosair'>
+                                        Sair
+                                    </Fab>
+                                </Link>
+                            </Typography>
+                        </Box>
+                    </Grid>
+                    <Grid xs={2}>
+                        <Box className='cursor marginbotton'>
+                            <Typography variant="h5" color="inherit">
+                                <img src={CompassWest} width="50px" alt="" />
+                            </Typography>
+                        </Box>
+                    </Grid>
 
-            </Toolbar>
-        </AppBar>
+
+
+
+
+
+
+
+
+                </Toolbar>
+            </AppBar>
+        </Grid>
     }
 
     return (

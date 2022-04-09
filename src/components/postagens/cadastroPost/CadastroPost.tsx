@@ -10,8 +10,6 @@ import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
 import Fab from '@mui/material/Fab';
 
-
-
 function CadastroPost() {
     let history = useHistory();
     const { id } = useParams<{ id: string }>();
@@ -159,7 +157,8 @@ function CadastroPost() {
                         }
                     </Select>
                     <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-                    <Fab size="large" variant="extended" className="marginLeft atualizar">
+
+                    <Fab type="submit" size="large" variant="extended" className="marginLeft atualizar">
                         Finalizar
                     </Fab>
                 </FormControl>

@@ -88,7 +88,7 @@ function DeletarTema() {
           <CardActions>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
-                <Fab size="large" variant="extended" onClick={sim} className="marginLeft atualizar" >
+                <Fab type="submit" size="large" variant="extended" onClick={sim} className="marginLeft atualizar" >
                   Sim
                 </Fab>
               </Box>

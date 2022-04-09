@@ -3,16 +3,44 @@
         height: 300px;
     }
     
-    .cursor5{
+    .cursor5 {
         cursor: pointer;
-        color:white;
+        color: white;
         padding: 35px;
         color: #fff;
         font-weight: bold !important;
         text-decoration: none;
     }
-
-
+    
     a:hover {
-        color: #000;   
+        color: #000;
+    }
+    
+    .botao1n {
+        color: #3E80A6!important;
+        font-weight: bold !important;
+        height: 30px !important;
+    }
+    
+    .botaosair {
+        color: #901651!important;
+        font-weight: bold !important;
+        height: 30px !important;
+    }
+    
+    .botaon {
+        text-decoration: none !important;
+        text-decoration: none;
+    }
+    
+    .barran {
+        background-color: white;
+        display: flex;
+        justify-content: flex-start;
+        height: 64px;
+        width: 100%;
+    }
+    
+    .marginbotton {
+        margin-top: 15px;
     }
