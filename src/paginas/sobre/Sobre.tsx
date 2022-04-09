@@ -4,10 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Sobre.css';
-import bussola2 from './images/bussola2.jpg';
-import ursoBussola from './images/ursoBussola.png';
-import ney from './images/ney.png';
-import icone from './images/icone.png';
+
 
 function Sobre() {
     return (
@@ -132,11 +129,6 @@ function Sobre() {
                 </Grid>
             </Grid>
             </Grid>
-
-
-
-
-
 
         </>
     );
