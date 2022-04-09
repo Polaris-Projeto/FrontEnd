@@ -80,12 +80,12 @@ function CadastroUsuario() {
     return (
         <>
             
-            <Box className='box'>
+            <Box className='box' >
                 <Grid container direction="row" justifyContent="center" alignItems="center" className='imagemCadastro'>
                     <Grid item xs={5} alignItems="center">
                         <Box paddingX={10} className="form" >
 
-                            <form onSubmit={cadastrar} >
+                            <form onSubmit={cadastrar}  >
                                 <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center"
                                     className="textosCadastro">Cadastrar</Typography>
 
@@ -100,7 +100,7 @@ function CadastroUsuario() {
                                     margin="normal"
                                     fullWidth required
                                     style={{
-                                        backgroundColor: "#BACFDB"
+                                        backgroundColor: "#dee5e9"
                                     }}
                                 />
 
@@ -115,7 +115,7 @@ function CadastroUsuario() {
                                     margin="normal"
                                     fullWidth required
                                     style={{
-                                        backgroundColor: "#BACFDB"
+                                        backgroundColor: "#dee5e9"
                                     }}
                                 />
 
@@ -130,7 +130,7 @@ function CadastroUsuario() {
                                     type="password"
                                     fullWidth required
                                     style={{
-                                        backgroundColor: "#BACFDB"
+                                        backgroundColor: "#dee5e9"
                                     }}
                                 />
 
@@ -145,7 +145,7 @@ function CadastroUsuario() {
                                     type="password"
                                     fullWidth required
                                     style={{
-                                        backgroundColor: "#BACFDB"
+                                        backgroundColor: "#dee5e9"
                                     }}
                                 />
 
@@ -159,7 +159,7 @@ function CadastroUsuario() {
                                     margin="normal"
                                     fullWidth
                                     style={{
-                                        backgroundColor: "#BACFDB"
+                                        backgroundColor: "#dee5e9"
                                     }}
                                 />
 

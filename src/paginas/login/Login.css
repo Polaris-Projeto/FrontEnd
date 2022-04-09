@@ -1,5 +1,5 @@
 .text-decorator-none {
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .form1{
@@ -34,7 +34,7 @@
 }
 
 .botaoLogar {
-    background-color: #3E80A6!important;
+    background-color: #901651!important;
     color: white !important;
 }
 

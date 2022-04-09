@@ -86,7 +86,7 @@ function Login() {
                                     variant='outlined' 
                                     name='usuario' 
                                     margin='normal' 
-                                    style={{backgroundColor: "#BACFDB"}}
+                                    style={{backgroundColor: "#dee5e9"}}
                                     fullWidth />
 
                                 <TextField value={userLogin.senha}
@@ -97,7 +97,7 @@ function Login() {
                                     name='senha'
                                     margin='normal'
                                     type='password'
-                                    style={{backgroundColor: "#BACFDB"}}
+                                    style={{backgroundColor: "#dee5e9"}}
                                     fullWidth />
 
                                 <Box marginTop={2} textAlign='center' className='mge'>
@@ -111,12 +111,12 @@ function Login() {
                                         <Typography variant='subtitle1' gutterBottom align='center'>Não tem uma conta?</Typography>
                                     </Box>
                                     <Link to="/cadastrousuario">
-                                        <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se</Typography>
+                                        <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Cadastre-se aqui!</Typography>
                                     </Link>
                                     
                                 </Box>
                                 <Link to="/">
-                                        <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Conheça-nos</Typography>
+                                        <Typography variant='subtitle1' gutterBottom align='center' className='textos1'>Conheça a Polaris</Typography>
                                     </Link>
                             </form>
                         </Box>
