@@ -1,5 +1,5 @@
             .imagemCadastro {
-                background-image: url(https://cdn.discordapp.com/attachments/941330341271048263/961991327019585606/CADASTRAR.png);
+                background-image: url(../../assets/img/CADASTRAR2.png);
                 background-repeat: no-repeat;
                 width: 100vh;
                 min-height: 100vh;
@@ -46,13 +46,13 @@
                 align-items: center;
             }
             
-            .box {
+            /*.box {
                 background-image: url(https://cdn.discordapp.com/attachments/941330341271048263/961996772421566524/CADATRAR_2.png);
             }
             
             .navbar {
                 image-rendering: url(https://cdn.discordapp.com/attachments/695836229073109053/962010892516606073/Compass.png);
-            }
+            }*/
             
             .mge {
                 margin-block-end: 30px;

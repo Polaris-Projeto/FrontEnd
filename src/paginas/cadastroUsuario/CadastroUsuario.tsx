@@ -79,27 +79,9 @@ function CadastroUsuario() {
 
     return (
         <>
-            <AppBar position="static" >
-                <Toolbar variant="dense" className='center '
-                    style={{
-                        backgroundColor: "white"
-                    }} >
-
-                    <Box display="flex" justifyContent="start">
-                        <Link to="/login" className="text-decorator-none textosblack" >
-                            <Box mx={1}>
-                                <Typography variant="h6" color="inherit" >
-                                    <img src={Compass} alt="a" />
-                                </Typography>
-                            </Box>
-                        </Link>
-
-                    </Box>
-
-                </Toolbar>
-            </AppBar>
+            
             <Box className='box'>
-                <Grid container direction="row" justifyContent="center" alignItems="center" className='background'>
+                <Grid container direction="row" justifyContent="center" alignItems="center" className='imagemCadastro'>
                     <Grid item xs={5} alignItems="center">
                         <Box paddingX={10} className="form" >
 
