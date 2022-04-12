@@ -49,9 +49,8 @@ function Sobre() {
 
                 <Box className='caixa-sobre'>
                     <img src={ursoBussola} alt="Urso" className="urso" />
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum, similique aperiam doloribus ipsum quia ad laborum dolorum debitis dolor odit suscipit, tempore reiciendis nulla sit dolorem unde ex facilis.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos quaerat doloribus sequi rem asperiores cumque, possimus molestias veritatis tempora, saepe eius velit. Quasi natus molestiae cum quae, hic porro.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum, similique aperiam doloribus ipsum quia ad laborum dolorum debitis dolor odit suscipit, tempore reiciendis nulla sit dolorem unde ex facilis.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos quaerat doloribus sequi rem asperiores cumque, possimus molestias veritatis tempora, saepe eius velit. Quasi natus molestiae cum quae, hic porro.</p>
+                    <p className='font'>  Polaris é um projeto desenvolvido no bootcamp da generation Brasil, temos como iniciativa pensar na ODS 4 da ONU: Educação de qualidade.
+                        Se baseia em uma rede social, onde é possível conectar voluntários que queiram ensinar à pessoas que precisem de uma mentoria.</p>
                 </Box>
             </Grid>
             <Box className='p20'>
@@ -67,7 +66,8 @@ function Sobre() {
                                 <a href="https://www.linkedin.com/in/carolinx/" target="_blank">
                                     <LinkedInIcon className='icones' />
                                 </a>
-                                <p><h3 className='nome'>Carolina Lopes</h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt doloremque fuga dolorum molestiae nam beatae, enim unde quasi earum cum quo iste quae quisquam voluptates. Quis ipsum molestiae voluptate neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consequatur? Ex sapiente consequuntur eum alias nesciunt quis, aliquam qui ratione quas nemo velit vel? Voluptate dolore earum rerum explicabo beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur repellendus dignissimos itaque omnis? Culpa, ut cum delectus doloremque deleniti quos consectetur consequatur aspernatur, aliquid dicta rerum quia mollitia eius!</p>
+                                <p><h3 className='nome'>Carolina Lopes</h3>Sou Carolina Lopes, uma pesquisadora apaixonada e curiosa.
+                                    Atualmente sou Desenvolvedora Web Java pela Generation Brasil e Biomédica pela Universidade Anhembi Morumbi. A vivência e experiência no ambiente hospitalar me fez ter um olhar mais direcionado aos problemas e pensar nas suas resoluções, o que foi o pontapé da transição de carreira pra me aventurar na tecnologia e me apaixonar pelo mundo dev.</p>
                             </Box>
                         </Box>
                     </Grid>
@@ -81,7 +81,9 @@ function Sobre() {
                                 <a href="https://www.linkedin.com/in/rodrigo-alexandre-2203241b9/" target="_blank">
                                     <LinkedInIcon className='icones' />
                                 </a>
-                                <p><h3 className='nome'>Rodrigo Pereira </h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt doloremque fuga dolorum molestiae nam beatae, enim unde quasi earum cum quo iste quae quisquam voluptates. Quis ipsum molestiae voluptate neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consequatur? Ex sapiente consequuntur eum alias nesciunt quis, aliquam qui ratione quas nemo velit vel? Voluptate dolore earum rerum explicabo beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur repellendus dignissimos itaque omnis? Culpa, ut cum delectus doloremque deleniti quos consectetur consequatur aspernatur, aliquid dicta rerum quia mollitia eius!</p>
+                                <p><h3 className='nome'>Rodrigo Pereira </h3>Olá meu nome e Rodrigo Pereira Alexandre, tenho 20 anos e moro na zona leste de São Paulo. Desde pequeno sempre fui muito apaixonado por computação, no começo eu gostava mais de montar e desmontar meu computador afim de saber sempre mais sobre ele mas ao decorrer dos anos minha paixão foi mudando do harware para o software, me encantei com o mundo do desenvolvimento,
+                                    graças a esse sonho hoje estou no 4° Semestre da faculdade e acabo de me formar no bootcamp da Generation Brasil como Desenvolvedor Fullstack Java, me sinto 100% preparado pro mercado de trabalho, só basta uma oportunidade para eu mostrar minhas habilidades.
+                                </p>
                             </Box>
                         </Box>
                     </Grid>
@@ -95,7 +97,14 @@ function Sobre() {
                                 <a href="https://www.linkedin.com/in/leosouzarodrigues/" target="_blank">
                                     <LinkedInIcon className='icones' />
                                 </a>
-                                <p><h3 className='nome'>Leonardo</h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt doloremque fuga dolorum molestiae nam beatae, enim unde quasi earum cum quo iste quae quisquam voluptates. Quis ipsum molestiae voluptate neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consequatur? Ex sapiente consequuntur eum alias nesciunt quis, aliquam qui ratione quas nemo velit vel? Voluptate dolore earum rerum explicabo beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur repellendus dignissimos itaque omnis? Culpa, ut cum delectus doloremque deleniti quos consectetur consequatur aspernatur, aliquid dicta rerum quia mollitia eius!</p>
+                                <p><h3 className='nome'>Leonardo Rodrigues</h3>Tive o primeiro contato com a tecnologia por meio de jogos quando pequeno,
+                                    sempre curioso e com um gostar imenso por aprender,
+                                    busquei formas de me envolver ainda mais com a tecnologia e assim,
+                                    encontrei a Generation, com muito estudo e
+                                    dedicação, estou tornando
+                                    a tecnologia minha profissão.
+                                    com a prática e o estudo constante,
+                                    logo chegarei na excelência. Nunca me contentando com meu nível atual.</p>
                             </Box>
                         </Box>
                     </Grid>
@@ -111,7 +120,7 @@ function Sobre() {
                                 <a href="https://www.linkedin.com/in/luucas-vieira/" target="_blank">
                                     <LinkedInIcon className='icones' />
                                 </a>
-                                <p><h3 className='nome'>Lucas Vieira</h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt doloremque fuga dolorum molestiae nam beatae, enim unde quasi earum cum quo iste quae quisquam voluptates. Quis ipsum molestiae voluptate neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consequatur? Ex sapiente consequuntur eum alias nesciunt quis, aliquam qui ratione quas nemo velit vel? Voluptate dolore earum rerum explicabo beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur repellendus dignissimos itaque omnis? Culpa, ut cum delectus doloremque deleniti quos consectetur consequatur aspernatur, aliquid dicta rerum quia mollitia eius!</p>
+                                <p><h3 className='nome'>Lucas Vieira</h3>Olá meu nome é Lucas Vieira, tenho 19 anos, atualmente cursando análise e desenvolvimento de sistemas de sistemas na Facens - Sorocaba, fanático por futebol e sempre conectado na  tecnologia, meu diferencial é gostar de desafios e sempre estar disposto à aprofundar meus conhecimentos, prezo e tenho facilidade de aprender novos conteúdos. Busco no futuro compartilhar minhas experiências fazendo oque eu gosto, enfrentando desafios e agregar em oportunidades.</p>
                             </Box>
                         </Box>
                     </Grid>
@@ -125,7 +134,7 @@ function Sobre() {
                                 <a href="https://www.linkedin.com/in/leosouzarodrigues/" target="_blank">
                                     <LinkedInIcon className='icones' />
                                 </a>
-                                <p><h3 className='nome'>Paulo Ricardo</h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt doloremque fuga dolorum molestiae nam beatae, enim unde quasi earum cum quo iste quae quisquam voluptates. Quis ipsum molestiae voluptate neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consequatur? Ex sapiente consequuntur eum alias nesciunt quis, aliquam qui ratione quas nemo velit vel? Voluptate dolore earum rerum explicabo beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur repellendus dignissimos itaque omnis? Culpa, ut cum delectus doloremque deleniti quos consectetur consequatur aspernatur, aliquid dicta rerum quia mollitia eius!</p>
+                                <p><h3 className='nome'>Paulo Ricardo</h3>Sou formado em engenharia. Tenho mais de 3 anos de experiência na área de desenvolvimento de produtos, principalmente lidando com testes de desempenho, desenvolvimento de software e hardware. Sou estudante de Programação e estou em transição de carreira.</p>
                             </Box>
                         </Box>
                     </Grid>
@@ -139,7 +148,8 @@ function Sobre() {
                                 <a href="">
                                     <LinkedInIcon className='icones' />
                                 </a>
-                                <p><h3 className='nome'>Ana Caroline</h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt doloremque fuga dolorum molestiae nam beatae, enim unde quasi earum cum quo iste quae quisquam voluptates. Quis ipsum molestiae voluptate neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, consequatur? Ex sapiente consequuntur eum alias nesciunt quis, aliquam qui ratione quas nemo velit vel? Voluptate dolore earum rerum explicabo beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore consequatur repellendus dignissimos itaque omnis? Culpa, ut cum delectus doloremque deleniti quos consectetur consequatur aspernatur, aliquid dicta rerum quia mollitia eius!</p>
+                                <p><h3 className='nome'>Ana Caroline</h3>Olá! Sou a Carol, tenho 18 anos e sou apaixonada por tecnologia e desenvolvimento.
+                                    Desde cedo esses dois temas me acompanham, e como sabemos, andam lado a lado. Minha trajetória começou quando eu era muito nova, ganhei meu primeiro notebook e me interessei pelos jogos. Apesar disso, minha vontade em aprender mais sobre a tecnologia continuava crescendo. Foi então na minha graduação que conheci a Generation Brasil e iniciei uma nova fase da minha vida lá dentro.</p>
                             </Box>
                         </Box>
                     </Grid>

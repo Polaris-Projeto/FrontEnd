@@ -199,3 +199,8 @@
 .p20 {
     padding: 20px;
 }
+
+.font {
+    font-size: 30px !important;
+    color: #000000;
+}
