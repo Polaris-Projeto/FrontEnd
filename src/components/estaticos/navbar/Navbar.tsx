@@ -48,18 +48,14 @@ function Navbar() {
                     <Grid xs={3}>
                         <Typography variant="h6" color="inherit">
                             <Link to="/home" className="botaon">
-                                <Fab size="large" variant="extended" className='botao1n'>
                                     Home
-                                </Fab>
                             </Link>
                         </Typography>
                     </Grid>
                     <Grid xs={4}>
                         <Typography variant="h6" color="inherit">
                             <Link to="/posts" className="botaon">
-                                <Fab size="large" variant="extended" className='botao1n'>
                                     Postagens
-                                </Fab>
                             </Link>
                         </Typography>
                     </Grid>
@@ -67,9 +63,7 @@ function Navbar() {
                         <Box mx={1} >
                             <Typography variant="h6" color="inherit">
                                 <Link to="/temas" className="botaon">
-                                    <Fab size="large" variant="extended" className='botao1n'>
                                         Temas
-                                    </Fab>
                                 </Link>
                             </Typography>
                         </Box>
@@ -77,19 +71,15 @@ function Navbar() {
                     <Grid xs={5}>
                         <Typography variant="h6" color="inherit">
                             <Link to="/formularioTema" className="botaon">
-                                <Fab size="large" variant="extended" className='botao1n'>
                                     Formulário Temas
-                                </Fab>
                             </Link>
                         </Typography>
                     </Grid>
                     <Grid xs={3}>
                         <Box mx={1} onClick={goLogout}>
                             <Typography variant="h6" color="inherit" >
-                                <Link to="/login" className="botaon">
-                                    <Fab size="large" variant="extended" className='botaosair'>
+                                <Link to="/login" className="botaosair">
                                         Sair
-                                    </Fab>
                                 </Link>
                             </Typography>
                         </Box>
