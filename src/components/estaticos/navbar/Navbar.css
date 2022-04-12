@@ -23,6 +23,8 @@
     }
     
     .botaosair {
+        text-decoration: none !important;
+        text-decoration: none;
         color: #901651!important;
         font-weight: bold !important;
         height: 30px !important;
@@ -31,6 +33,9 @@
     .botaon {
         text-decoration: none !important;
         text-decoration: none;
+        color: #3E80A6!important;
+        font-weight: bold !important;
+        height: 30px !important;
     }
     
     .barran {

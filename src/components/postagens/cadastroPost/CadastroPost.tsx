@@ -10,6 +10,8 @@ import { TokenState } from '../../../store/tokens/tokensReducer';
 import { toast } from 'react-toastify';
 import Fab from '@mui/material/Fab';
 
+
+
 function CadastroPost() {
     let history = useHistory();
     const { id } = useParams<{ id: string }>();
@@ -141,7 +143,7 @@ function CadastroPost() {
                 <TextField value={postagem.texto} onChange={(e: ChangeEvent<HTMLInputElement>) => updatedPostagem(e)} id="texto" label="texto" name="texto" variant="outlined" margin="normal" fullWidth />
 
                 <FormControl  >
-                    <InputLabel id="demo-simple-select-helper-label" >Tema </InputLabel>
+                    <InputLabel id="demo-simple-select-helper-label" >Tema  </InputLabel>
                     <Select
                         labelId="demo-simple-select-helper-label"
                         id="demo-simple-select-helper"
@@ -157,8 +159,8 @@ function CadastroPost() {
                         }
                     </Select>
                     <FormHelperText>Escolha um tema para a postagem</FormHelperText>
-
-                    <Fab size="large" variant="extended" className=" atualizar">
+                   
+                    <Fab type="submit" size="large" variant="extended" className="marginLeft atualizar">
                         Finalizar
                     </Fab>
                 </FormControl>

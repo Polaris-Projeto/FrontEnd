@@ -2,7 +2,7 @@
     text-decoration: none !important;
 }
 
-.form1{
+.form1 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,17 +10,15 @@
     margin-block-end: 60px;
     background-color: white;
     border-radius: 70px;
-
 }
 
-.body1{
+.body1 {
     background-image: url(../../assets/img/ENTRAR.png);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-
 }
 
 .texto {
@@ -48,8 +46,6 @@
     margin-block-end: 30px;
 }
 
-
-
-
-
-
+.p15 {
+    padding: 15px;
+}

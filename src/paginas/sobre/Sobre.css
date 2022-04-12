@@ -195,3 +195,7 @@
     align-items: flex-end;
     justify-content: flex-end;
 }
+
+.p20 {
+    padding: 20px;
+}

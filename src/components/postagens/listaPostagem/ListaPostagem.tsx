@@ -52,45 +52,44 @@ function ListaPostagem() {
     <>
       {
         posts.map(post => (
-            <Box m={2}  >
-              <Card variant="outlined" >
-                <CardContent>
-                  <Typography color="textSecondary" className='lista' gutterBottom >
-                    POSTAGENS
-                  </Typography>
-                  <Typography variant="h5" component="h2">
-                    {post.titulo}
-                  </Typography>
-                  <Typography variant="body2" component="p">
-                    {post.texto}
-                  </Typography>
-                  <Typography variant="body2" component="p">
-                    {post.tema?.descricao}
-                  </Typography>
-                </CardContent>
-                <CardActions>
-                  <Box display="flex" justifyContent="center" mb={1.5} >
+          <Box m={2}  >
+            <Card variant="outlined" >
+              <CardContent>
+                <Typography color="textSecondary" className='lista' gutterBottom >
+                  POSTAGEM
+                </Typography>
+                <Typography variant="h5" component="h2">
+                  {post.titulo}
+                </Typography>
+                <Typography variant="body2" component="p">
+                  {post.texto}
+                </Typography>
+                <Typography variant="body2" component="p">
+                  {post.tema?.descricao}
+                </Typography>
+              </CardContent>
+              <CardActions>
+                <Box className='center' mb={.5} >
 
-                    <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
+                  <Link to={`/formularioPostagem/${post.id}`} className="text-decorator-none" >
+                    <Box mx={1}>
+                      <Fab type="submit" size="large" variant="extended" className=" atualizar">
+                        atualizar
+                      </Fab>
+                    </Box>
+                  </Link>
+                  <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
 
-                      <Box mx={1}>
-                        <Fab type="submit" size="large" variant="extended" className="marginLeft atualizar">
-                          atualizar
-                        </Fab>
-                      </Box>
-                    </Link>
-                    <Link to={`/deletarPostagem/${post.id}`} className="text-decorator-none">
-
-                      <Box mx={1}>
-                        <Fab type="submit" size="large" variant="extended" className='deletar'>
-                          deletar
-                        </Fab>
-                      </Box>
-                    </Link>
-                  </Box>
-                </CardActions>
-              </Card>
-            </Box>
+                    <Box mx={1}>
+                      <Fab type="submit" size="large" variant="extended" className='deletar'>
+                        deletar
+                      </Fab>
+                    </Box>
+                  </Link>
+                </Box>
+              </CardActions>
+            </Card>
+          </Box>
 
         ))
       }

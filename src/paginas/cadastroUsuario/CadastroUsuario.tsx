@@ -80,7 +80,14 @@ function CadastroUsuario() {
     return (
         <>
             
+<<<<<<< HEAD
             <Box className='box' >
+=======
+            <Box >
+                <Link to="/" className='p15'>
+                <img src={Compass} width="50px" alt="" />
+                </Link>
+>>>>>>> Lucas
                 <Grid container direction="row" justifyContent="center" alignItems="center" className='imagemCadastro'>
                     <Grid item xs={5} alignItems="center">
                         <Box paddingX={10} className="form" >
