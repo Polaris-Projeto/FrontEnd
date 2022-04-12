@@ -81,8 +81,7 @@ function Sobre() {
                                 <a href="https://www.linkedin.com/in/rodrigo-alexandre-2203241b9/" target="_blank">
                                     <LinkedInIcon className='icones' />
                                 </a>
-                                <p><h3 className='nome'>Rodrigo Pereira </h3>Olá meu nome e Rodrigo Pereira Alexandre, tenho 20 anos e moro na zona leste de São Paulo. Desde pequeno sempre fui muito apaixonado por computação, no começo eu gostava mais de montar e desmontar meu computador afim de saber sempre mais sobre ele mas ao decorrer dos anos minha paixão foi mudando do harware para o software, me encantei com o mundo do desenvolvimento,
-                                    graças a esse sonho hoje estou no 4° Semestre da faculdade e acabo de me formar no bootcamp da Generation Brasil como Desenvolvedor Fullstack Java, me sinto 100% preparado pro mercado de trabalho, só basta uma oportunidade para eu mostrar minhas habilidades.
+                                <p><h3 className='nome'>Rodrigo Pereira </h3>Olá meu nome e Rodrigo Pereira Alexandre, tenho 20 anos e moro na zona leste de São Paulo. Desde pequeno sempre fui muito apaixonado por computação, com o tempo minha paixão foi mudando do hardware para o software, me encantei com o mundo do desenvolvimento, atualmente estou no 4° Semestre da faculdade e acabo de me formar no bootcamp da Generation Brasil como Desenvolvedor Fullstack Java, me sinto 100% preparado pro mercado de trabalho, só basta uma oportunidade para eu mostrar minhas habilidades.
                                 </p>
                             </Box>
                         </Box>
