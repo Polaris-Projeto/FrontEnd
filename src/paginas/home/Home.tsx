@@ -8,7 +8,6 @@ import { useSelector } from 'react-redux';
 import { UserState } from '../../store/user/userReducer';
 import { toast } from 'react-toastify';
 import image23 from "../../assets/img/image23.png";
-import { TokenState } from '../../store/tokens/tokensReducer';
 import Avatar from '@material-ui/core/Avatar';
 
 
