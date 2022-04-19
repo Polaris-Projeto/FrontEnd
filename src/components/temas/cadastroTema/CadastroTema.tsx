@@ -5,14 +5,14 @@ import './CadastroTema.css';
 import Tema from '../../../models/Tema';
 import { buscaId, post, put } from '../../../services/Service';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+import { UserState } from '../../../store/user/userReducer';
 import { toast } from 'react-toastify';
 import Fab from '@mui/material/Fab';
 
 function CadastroTema() {
     let history = useHistory();
     const { id } = useParams<{id: string}>();
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
       );
 

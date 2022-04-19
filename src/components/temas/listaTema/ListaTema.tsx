@@ -5,14 +5,14 @@ import Tema from '../../../models/Tema'
 import './ListaTema.css';
 import { busca } from '../../../services/Service';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+import { UserState } from '../../../store/user/userReducer';
 import { toast } from 'react-toastify';
 import Fab from '@mui/material/Fab';
 
 function ListaTema() {
   let history = useHistory();
   const [temas, setTemas] = useState<Tema[]>([])
-  const token = useSelector<TokenState, TokenState["tokens"]>(
+  const token = useSelector<UserState, UserState["tokens"]>(
     (state) => state.tokens
   );
 
@@ -48,7 +48,7 @@ function ListaTema() {
       {
         temas.map(tema => (
           <Box m={2} >
-            <Card variant="outlined">
+            <Card variant="outlined" >
               <CardContent>
                 <Typography  color="textSecondary" className='lista' gutterBottom>
                   TEMA

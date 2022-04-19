@@ -51,7 +51,7 @@ function CadastroUsuario() {
 
     async function cadastrar(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault()
-        if (confirmarSenha == user.senha) {
+        if (confirmarSenha === user.senha && user.senha.length >= 8) {
             await cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult)
             toast.success('Usuario cadastrado com sucesso', {
                 position: "top-right",
@@ -74,6 +74,9 @@ function CadastroUsuario() {
                 theme: "colored",
                 progress: undefined,
             });
+
+            setUser({ ...user, senha: "" }) // Reinicia o campo de Senha
+            setConfirmarSenha("")           // Reinicia o campo de Confirmar Senha
         }
     }
 

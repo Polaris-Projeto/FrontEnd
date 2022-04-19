@@ -1,4 +1,6 @@
 .p5 {
+   text-align: center !important;
+   
     padding: 5px;
 }
 
@@ -199,3 +201,4 @@
 .p20 {
     padding: 20px;
 }
+

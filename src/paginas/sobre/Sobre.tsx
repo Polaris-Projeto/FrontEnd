@@ -20,6 +20,7 @@ function Sobre() {
                             <img src={icone} alt="ícone de uma bússola" className='iconeBussola' />
                         </Grid>
                         <Grid xs={5}>
+                    
                         </Grid>
                         <Grid xs={8}>
                         </Grid>
@@ -46,8 +47,9 @@ function Sobre() {
                 <Box className="img1">
                     <img src={bussola2} className="foto" />
                 </Box>
-
+                
                 <Box className='caixa-sobre'>
+                     
                     <img src={ursoBussola} alt="Urso" className="urso" />
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum, similique aperiam doloribus ipsum quia ad laborum dolorum debitis dolor odit suscipit, tempore reiciendis nulla sit dolorem unde ex facilis.
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos dignissimos quaerat doloribus sequi rem asperiores cumque, possimus molestias veritatis tempora, saepe eius velit. Quasi natus molestiae cum quae, hic porro.Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed voluptatum, similique aperiam doloribus ipsum quia ad laborum dolorum debitis dolor odit suscipit, tempore reiciendis nulla sit dolorem unde ex facilis.

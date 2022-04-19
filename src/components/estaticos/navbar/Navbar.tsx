@@ -3,14 +3,14 @@ import { Link, useHistory } from "react-router-dom";
 import { AppBar, Toolbar, Typography, Box, Fab, Grid } from '@material-ui/core';
 import { toast } from 'react-toastify';
 import { useDispatch, useSelector } from "react-redux";
-import { TokenState } from "../../../store/tokens/tokensReducer";
-import { addToken } from "../../../store/tokens/actions";
+import { UserState } from "../../../store/user/userReducer";
+import { addToken } from "../../../store/user/actions";
 import Compass from "../../../assets/img/Compass.png";
 import CompassWest from "../../../assets/img/CompassWest.png";
 import './Navbar.css';
 
 function Navbar() {
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     );
     let history = useHistory();
@@ -75,6 +75,17 @@ function Navbar() {
                             </Link>
                         </Typography>
                     </Grid>
+                    
+                    <Grid xs={3}>
+                        <Box mx={1} >
+                            <Typography variant="h6" color="inherit">
+                                <Link to="/perfil" className="botaon">
+                                     Perfil
+                                </Link>
+                            </Typography>
+                        </Box>
+                    </Grid>
+
                     <Grid xs={3}>
                         <Box mx={1} onClick={goLogout}>
                             <Typography variant="h6" color="inherit" >
@@ -91,14 +102,6 @@ function Navbar() {
                             </Typography>
                         </Box>
                     </Grid>
-
-
-
-
-
-
-
-
 
                 </Toolbar>
             </AppBar>

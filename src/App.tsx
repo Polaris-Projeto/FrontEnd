@@ -18,6 +18,7 @@ import store from './store/store';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Sobre from './paginas/sobre/Sobre';
+import Perfil from './paginas/Perfil/Perfil';
 
 function App() {
   return (
@@ -74,6 +75,10 @@ function App() {
 
             <Route path='/deletarTema/:id'>
               <DeletarTema />
+            </Route>
+
+            <Route path='/perfil'>
+              <Perfil />
             </Route>
 
           </div>

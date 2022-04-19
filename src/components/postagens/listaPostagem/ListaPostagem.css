@@ -32,3 +32,7 @@
     justify-content: center;
     align-items: center;
 }
+
+.ca{
+    background: linear-gradient(36deg, rgb(204, 206, 206) 8%, #901651 80%);
+}

@@ -1,14 +1,15 @@
 import React, { ChangeEvent, useEffect, useState } from 'react'
-import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText } from "@material-ui/core"
+import { Container, Typography, TextField, Button, Select, InputLabel, MenuItem, FormControl, FormHelperText, useRadioGroup } from "@material-ui/core"
 import './CadastroPost.css';
 import { useHistory, useParams } from 'react-router-dom';
 import Tema from '../../../models/Tema';
 import Postagem from '../../../models/Postagem';
 import { busca, buscaId, post, put } from '../../../services/Service';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+import { UserState } from '../../../store/user/userReducer';
 import { toast } from 'react-toastify';
 import Fab from '@mui/material/Fab';
+import User from '../../../models/User';
 
 
 
@@ -16,12 +17,17 @@ function CadastroPost() {
     let history = useHistory();
     const { id } = useParams<{ id: string }>();
     const [temas, setTemas] = useState<Tema[]>([])
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     );
 
+    // Pega o ID guardado no Store
+    const userId = useSelector<UserState, UserState["id"]>(
+        (state) => state.id
+    );
+
     useEffect(() => {
-        if (token == "") {
+        if (token === "") {
             toast.error('Você precisa estar logado', {
                 position: "top-right",
                 autoClose: 2000,
@@ -47,7 +53,16 @@ function CadastroPost() {
         titulo: '',
         texto: '',
         data: '',
-        tema: null
+        tema: null,
+        usuario: null
+    })
+
+    const [user, setUser] = useState<User>({
+        id: +userId,
+        nome: "",
+        usuario: "",
+        senha: "",
+        foto: ""
     })
 
     useEffect(() => {
@@ -85,7 +100,8 @@ function CadastroPost() {
         setPostagem({
             ...postagem,
             [e.target.name]: e.target.value,
-            tema: tema
+            tema: tema,
+            usuario: user
         })
 
     }

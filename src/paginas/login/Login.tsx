@@ -5,7 +5,7 @@ import UserLogin from '../../models/UserLogin';
 import { login } from '../../services/Service';
 import "./Login.css";
 import { useDispatch } from 'react-redux';
-import { addToken } from '../../store/tokens/actions';
+import { addId, addToken } from '../../store/user/actions';
 import { toast } from 'react-toastify';
 import Compass from "../../assets/img/Compass.png";
 import CompassWest from "../../assets/img/CompassWest.png";
@@ -26,6 +26,22 @@ function Login() {
         token: ""
     })
 
+    const [respUserLogin, setRespUserLogin] = useState<UserLogin>({
+        id: 0,
+        nome: "",
+        usuario: "",
+        senha: "",
+        token: "",
+        foto: ""
+    })
+
+    useEffect(() => {
+        if (token !== "") {
+            dispatch(addToken(token))
+            history.push('/home')
+        }
+    }, [token])
+
 
     function updatedModel(e: ChangeEvent<HTMLInputElement>) {
         setUserLogin({
@@ -34,17 +50,26 @@ function Login() {
         })
     }
 
+
+
     useEffect(() => {
-        if (token !== "") {
-            dispatch(addToken(token));
-            history.push("/home")
+        if(respUserLogin.token !== ""){
+
+            // Verifica os dados pelo console (Opcional)
+            console.log("Token: " + respUserLogin.token)
+            console.log("ID: " + respUserLogin.id)
+
+            // Guarda as informações dentro do Redux (Store)
+            dispatch(addToken(respUserLogin.token)) 
+            dispatch(addId(respUserLogin.id.toString()))    // Faz uma conversão de Number para String
+            history.push('/home')
         }
-    }, [token])
+    }, [respUserLogin.token])
 
     async function cadastrar(e: ChangeEvent<HTMLFormElement>) {
         e.preventDefault();
         try {
-            await login(`/usuarios/logar`, userLogin, setToken)
+            await login(`/usuarios/logar`, userLogin, setRespUserLogin)
             toast.success('Usuário logado com sucesso!', {
                 position: "top-right",
                 autoClose: 2000,

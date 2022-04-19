@@ -1,13 +1,13 @@
 import React from "react";
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { Typography, Box, Grid } from '@material-ui/core';
-import { TokenState } from "../../../store/tokens/tokensReducer";
+import { UserState } from "../../../store/user/userReducer";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 
 
 function Footer() {
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     );
     let history = useHistory();

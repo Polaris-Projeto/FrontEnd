@@ -1,21 +1,32 @@
 import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import Postagem from '../../../models/Postagem';
 import { busca } from '../../../services/Service'
 import { Box, Card, CardActions, CardContent, Button, Typography, Grid } from '@material-ui/core';
 import './ListaPostagem.css';
 import { useHistory } from 'react-router-dom'
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../../store/tokens/tokensReducer';
+import { UserState } from '../../../store/user/userReducer';
 import { toast } from 'react-toastify';
 import Fab from '@mui/material/Fab';
 
 function ListaPostagem() {
   let history = useHistory();
   const [posts, setPosts] = useState<Postagem[]>([])
-  const token = useSelector<TokenState, TokenState["tokens"]>(
+  const token = useSelector<UserState, UserState["tokens"]>(
     (state) => state.tokens
   );
+
+  const { id } = useParams<{ id: string }>();
+
+  const [postagem, setPostagem] = useState<Postagem>({
+    id: 0,
+    titulo: "",
+    texto: "",
+    data: "",
+    tema: null,
+    usuario: null
+  })
 
   useEffect(() => {
     if (token == "") {
@@ -53,7 +64,7 @@ function ListaPostagem() {
       {
         posts.map(post => (
           <Box m={2}  >
-            <Card variant="outlined" >
+            <Card variant="outlined">
               <CardContent>
                 <Typography color="textSecondary" className='lista' gutterBottom >
                   POSTAGEM

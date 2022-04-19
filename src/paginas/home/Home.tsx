@@ -5,20 +5,31 @@ import './Home.css';
 import { Link, useHistory } from 'react-router-dom';
 import TabPostagem from '../../components/postagens/tabPostagem/TabPostagem';
 import { useSelector } from 'react-redux';
-import { TokenState } from '../../store/tokens/tokensReducer';
+import { UserState } from '../../store/user/userReducer';
 import { toast } from 'react-toastify';
 import image23 from "../../assets/img/image23.png";
 
 function Home() {
 
     let history = useHistory();
-    const token = useSelector<TokenState, TokenState["tokens"]>(
+    const token = useSelector<UserState, UserState["tokens"]>(
         (state) => state.tokens
     );
 
     useEffect(() => {
-        if (token == "") {
+        if (token === "") {
+          toast.error('Você precisa estar logado', {
+              position: "top-right",
+              autoClose: 2000,
+              hideProgressBar: false,
+              closeOnClick: true,
+              pauseOnHover: false,
+              draggable: false,
+              theme: "colored",
+              progress: undefined,
+          });
             history.push("/login")
+    
         }
     }, [token])
     return (
@@ -39,7 +50,7 @@ function Home() {
                     </Box>
                 </Grid>
                 <Grid item xs={6} >
-                    <img src={image23} alt="" width="700px" height="500px" />
+                  
                 </Grid>
                 <Grid xs={12} className='postagens'>
                     <TabPostagem />
