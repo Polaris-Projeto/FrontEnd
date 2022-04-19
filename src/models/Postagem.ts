@@ -1,11 +1,13 @@
-import Tema from "./Tema" //importo o caminho da model Tema
+import Tema from "./Tema"
+import User from "./User";
 
 interface Postagem { 
     id: number
     titulo: string
     texto: string
     data: string
-    tema?: Tema | null // aqui passo a estrutura do campo Tema, pois ela é mais complexa, visto que tema esta vinculado à postagem
+    tema?: Tema | null 
+    usuario?: User | null
 
 }
 

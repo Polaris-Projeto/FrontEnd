@@ -5,7 +5,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Sobre.css';
 import icone from "../../assets/img/icone.png";
-import bussola2 from "../../assets/img/bussola2.jpg";
+import bussola1 from "../../assets/img/bussola1.jpg";
 import ursoBussola from "../../assets/img/ursoBussola.png";
 
 
@@ -41,10 +41,11 @@ function Sobre() {
                     </Toolbar>
                 </AppBar>
             </Grid>
-
             <Grid container xs={12} className='fundoUrso'>
+                
                 <Box className="img1">
-                    <img src={bussola2} className="foto" />
+                    
+                    <img src={bussola1} className="foto" />
                 </Box>
 
                 <Box className='caixa-sobre'>

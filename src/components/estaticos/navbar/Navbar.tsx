@@ -37,7 +37,6 @@ function Navbar() {
         navbarComponent = <Grid xs={12}>
             <AppBar position="static" >
                 <Toolbar variant="dense" className="barran">
-
                     <Grid xs={2}>
                         <Box className='cursor marginbotton'>
                             <Typography variant="h5" color="inherit">
@@ -52,13 +51,6 @@ function Navbar() {
                             </Link>
                         </Typography>
                     </Grid>
-                    <Grid xs={4}>
-                        <Typography variant="h6" color="inherit">
-                            <Link to="/posts" className="botaon">
-                                    Postagens
-                            </Link>
-                        </Typography>
-                    </Grid>
                     <Grid xs={3}>
                         <Box mx={1} >
                             <Typography variant="h6" color="inherit">
@@ -68,14 +60,14 @@ function Navbar() {
                             </Typography>
                         </Box>
                     </Grid>
-                    <Grid xs={5}>
+                    <Grid xs={4}>
                         <Typography variant="h6" color="inherit">
                             <Link to="/formularioTema" className="botaon">
                                     Formulário Temas
                             </Link>
                         </Typography>
                     </Grid>
-                    <Grid xs={3}>
+                    <Grid xs={2}>
                         <Box mx={1} onClick={goLogout}>
                             <Typography variant="h6" color="inherit" >
                                 <Link to="/login" className="botaosair">
@@ -84,22 +76,13 @@ function Navbar() {
                             </Typography>
                         </Box>
                     </Grid>
-                    <Grid xs={2}>
+                    <Grid xs={1}>
                         <Box className='cursor marginbotton'>
                             <Typography variant="h5" color="inherit">
                                 <img src={CompassWest} width="50px" alt="" />
                             </Typography>
                         </Box>
                     </Grid>
-
-
-
-
-
-
-
-
-
                 </Toolbar>
             </AppBar>
         </Grid>
