@@ -10,3 +10,24 @@
     /*opacity : 0.7;*/
     background: (36 );
 }
+
+.back {
+    background-color: white;
+}
+
+.caixaPrincipal{
+    display: flex;
+}
+
+.usuario{
+    background-color: lightgray;
+}
+
+.avatar{
+    width: 200px;
+    height: 200px;
+}
+
+.avatar2{
+    padding-left: 10px;
+}

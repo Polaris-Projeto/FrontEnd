@@ -7,8 +7,7 @@ interface Postagem {
     texto: string
     data: string
     tema?: Tema | null // aqui passo a estrutura do campo Tema, pois ela é mais complexa, visto que tema esta vinculado à postagem
-    usuario: User | null;
-
+    usuario: User | null
 }
 
 export default Postagem;

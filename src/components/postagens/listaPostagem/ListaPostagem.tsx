@@ -2,13 +2,14 @@ import React, { useState, useEffect } from 'react'
 import { Link, useParams } from 'react-router-dom'
 import Postagem from '../../../models/Postagem';
 import { busca } from '../../../services/Service'
-import { Box, Card, CardActions, CardContent, Button, Typography, Grid } from '@material-ui/core';
+import { Box, Card, CardActions, CardContent, Button, Typography, Grid, IconButton } from '@material-ui/core';
 import './ListaPostagem.css';
 import { useHistory } from 'react-router-dom'
 import { useSelector } from 'react-redux';
 import { UserState } from '../../../store/user/userReducer';
 import { toast } from 'react-toastify';
 import Fab from '@mui/material/Fab';
+import FavoriteIcon from '@material-ui/icons/Favorite';
 
 function ListaPostagem() {
   let history = useHistory();

@@ -8,6 +8,10 @@ import { useSelector } from 'react-redux';
 import { UserState } from '../../store/user/userReducer';
 import { toast } from 'react-toastify';
 import image23 from "../../assets/img/image23.png";
+import { TokenState } from '../../store/tokens/tokensReducer';
+import Avatar from '@material-ui/core/Avatar';
+
+
 
 function Home() {
 
@@ -34,12 +38,8 @@ function Home() {
     }, [token])
     return (
         <>
-            <Grid container direction="row" justifyContent="center" alignItems="center" className='caixa'>
-                <Grid alignItems="center" item xs={6} >
-                    <Box paddingX={20} >
-                        <Typography variant="h3" gutterBottom color="textPrimary" component="h3" align="center" className='titulo'>Bem vinde ao Polaris!</Typography>
-                        <Typography variant="h5" gutterBottom color="textPrimary" component="h5" align="center" className='titulo'>Sua rede de busca em mentorias e voluntariados</Typography>
-                    </Box>
+            <Grid xs={12} container direction="row" className='caixaPrincipal'>
+                <Grid item xs={3} className='usuario' alignItems="center">
                     <Box display="flex" justifyContent="center">
                         <Box marginRight={1}>
                             <ModalPostagem />
@@ -53,9 +53,12 @@ function Home() {
                   
                 </Grid>
                 <Grid xs={12} className='postagens'>
+
                     <TabPostagem />
                 </Grid>
             </Grid>
+
+
         </>
 
     );

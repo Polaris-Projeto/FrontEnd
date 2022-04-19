@@ -25,9 +25,6 @@
     justify-content: center !important;
 }
 
-.foto {
-    max-width: 98.8vw;
-}
 
 .caixa-sobre {
     display: flex;
@@ -125,7 +122,7 @@
 }
 
 .foto {
-    max-width: 98.8vw;
+    width: 100vw;
 }
 
 .caixa-sobre {
@@ -201,4 +198,14 @@
 .p20 {
     padding: 20px;
 }
+
+.font {
+    font-size: 25px !important;
+    color: #000000;
+}
+
+.img1{
+    display: flex;
+}
+
 
